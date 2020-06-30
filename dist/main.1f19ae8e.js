@@ -117,23 +117,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"css.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var string = "\n/*\u5148\u6765\u753B\u67EF\u57FA\u7684\u8138*/\n\n.face {\n  background-color: #fff;\n}\n.face:after,.face:before {\n   background-color: #f79e38;\n}\n/*\u63A5\u4E0B\u6765\u753B\u773C\u775B*/\n.eye {\n  background-color: #000;\n  /*\u52A0\u70B9\u52A8\u753B*/\n  animation: dog-eye 1800ms infinite;\n}\n\n.eye--left {\n  left: 27%;\n}\n\n.eye--right {\n  left: 46%;\n}\n\n/*\u753B\u5634\u5DF4*/\n.mouth {\n  border-bottom-color: #000;\n  height: 48%;\n  border-style: solid;\n}\n\n/*\u753B\u8033\u6735*/\n.ear--left {\n    background-color: #e99036;\n    /*\u52A0\u70B9\u52A8\u753B*/\n    animation: left-ear 1000ms ease-out infinite alternate;\n}\n.ear--right {\n  background-color: #f79e38;\n  animation: right-ear 1000ms ease-out infinite alternate;\n}\n.nose {\n  background-color: #fff;\n  left: -12%;\n  top: -3%;\n}\n.nose:after {\n  background-color: #000;\n}\n\n/*\u63A5\u4E0B\u6765\u753B\u8EAB\u4F53*/\n.body {\n  background-color: #f79e38;\n}\n\n.cheast {\n  background-color: #fff;\n}\n\n.cheast:after, .cheast:before {\n  background-color: #fff;\n}\n\n/*\u753B\u5C3E\u5DF4*/\n.tail {\n  background-color: #f79e38;\n  /*\u52A0\u70B9\u52A8\u753B*/\n  animation: dog-tail 170ms ease-out infinite;\n}\n\n.tail:before \n  background-color: #f79e38;\n}\n\n/*\u6700\u540E\u753B\u4E0A\u5C0F\u77ED\u817F*/\n.legs__front, .legs__back {\n  width: 10%;\n  background-color: #f79e38;\n}\n\n.legs__front:after, .legs__back:after {\n  background-color: #fff;\n}\n\n";
-var _default = string;
-exports.default = _default;
-},{}],"main.js":[function(require,module,exports) {
-"use strict";
-
-var _css = _interopRequireDefault(require("./css.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
+})({"main.js":[function(require,module,exports) {
+var string = "/*\u4F60\u597D\u6211\u662F\u4E00\u540D\u524D\u7AEF\u65B0\u4EBA\uFF0C\n\u4ECA\u5929\u6211\u4EEC\u6765\u7528CSS\u753B\u4E00\u53EA\u53EF\u53EF\u7231\u7231\u7684\u67EF\u57FA\n\u5148\u6765\u753B\u67EF\u57FA\u7684\u8138*/\n.face {\n  background-color: #fff;\n}\n.face:after,.face:before {\n   background-color: #f79e38;\n}\n/*\u63A5\u4E0B\u6765\u753B\u773C\u775B*/\n.eye {\n  background-color: #000;\n  /*\u52A0\u70B9\u52A8\u753B*/\n  animation: dog-eye 1800ms infinite;\n}\n\n.eye--left {\n  left: 27%;\n}\n\n.eye--right {\n  left: 46%;\n}\n\n/*\u753B\u5634\u5DF4*/\n.mouth {\n  border-bottom-color: #000;\n  height: 48%;\n  border-style: solid;\n}\n\n/*\u753B\u8033\u6735*/\n.ear--left {\n    background-color: #e99036;\n    /*\u52A0\u70B9\u52A8\u753B*/\n    animation: left-ear 1000ms ease-out infinite alternate;\n}\n.ear--right {\n  background-color: #f79e38;\n  animation: right-ear 1000ms ease-out infinite alternate;\n}\n.nose {\n  background-color: #fff;\n  left: -12%;\n  top: -3%;\n}\n.nose:after {\n  background-color: #000;\n}\n\n/*\u63A5\u4E0B\u6765\u753B\u8EAB\u4F53*/\n.body {\n  background-color: #f79e38;\n}\n\n.cheast {\n  background-color: #fff;\n}\n\n.cheast:after, .cheast:before {\n  background-color: #fff;\n}\n\n/*\u753B\u5C3E\u5DF4*/\n.tail {\n  background-color: #f79e38;\n  /*\u52A0\u70B9\u52A8\u753B*/\n  animation: dog-tail 170ms ease-out infinite;\n}\n\n.tail:before \n  background-color: #f79e38;\n}\n\n/*\u6700\u540E\u753B\u4E0A\u5C0F\u77ED\u817F*/\n\n.legs__back {\n  width: 10%;\n  background-color: #f79e38;\n}\n\n.legs__front:after{\n  background: #fff;\n}\n\n.legs__back:after {\n  background: #fff;\n}\n\n.legs__front--left {\n  left: 38%;\n  transform: rotate(1deg);\n  width: 10%;\n  background-color: #f79e38;\n}\n\n.legs__front--right {\n  left: 20%;\n  transform: rotate(-4deg);\n  width: 10%;\n  background-color: #f79e38;\n}\n\n.legs__back--left {\n  left: 69%;\n  transform: rotate(-7deg);\n}\n\n.legs__back--right {\n  left: 85%;transform: rotate(2deg);\n}\n\n";
 var player = {
   id: undefined,
   time: 100,
@@ -150,8 +135,8 @@ var player = {
   },
   n: 1,
   init: function init() {
-    player.ui.demo.innerText = _css.default.substr(0, player.n);
-    player.ui.demo2.innerHTML = _css.default.substr(0, player.n);
+    player.ui.demo.innerText = string.substr(0, player.n);
+    player.ui.demo2.innerHTML = string.substr(0, player.n);
     player.bindEvents();
     player.play();
   },
@@ -167,14 +152,14 @@ var player = {
   run: function run() {
     player.n += 1;
 
-    if (player.n > _css.default.length) {
+    if (player.n > string.length) {
       window.clearInterval(player.id);
       return;
     }
 
-    player.ui.demo.innerText = _css.default.substr(0, player.n);
-    player.ui.demo2.innerHTML = _css.default.substr(0, player.n);
-    player.ui.demo.scrollTop = player.ui.demo.scrollHeight;
+    player.ui.demo.innerText = string.substr(0, player.n);
+    player.ui.demo2.innerHTML = string.substr(0, player.n);
+    player.ui.demo.scrollTop = player.ui.demo.scrollHeight + 1000;
   },
   play: function play() {
     player.id = setInterval(player.run, player.time);
@@ -199,7 +184,7 @@ var player = {
   }
 };
 player.init();
-},{"./css.js":"css.js"}],"C:/Users/Dandan/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"C:/Users/Dandan/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -227,7 +212,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52618" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58602" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,6 +1,5 @@
 const string = `
 /*先来画柯基的脸*/
-
 .face {
   background-color: #fff;
 }
