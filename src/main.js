@@ -104,10 +104,15 @@ const string = `/*你好我是一名前端新人，
 .legs__back--left {
   left: 69%;
   transform: rotate(-7deg);
+  width: 10%;
+  background-color: #f79e38;
 }
 
 .legs__back--right {
-  left: 85%;transform: rotate(2deg);
+  left: 85%;
+  transform: rotate(2deg);
+  width: 10%;
+  background-color: #f79e38;
 }
 
 `
