@@ -115,6 +115,12 @@ const string = `/*你好我是一名前端新人，
   background-color: #f79e38;
 }
 
+
+
+
+
+
+
 `
 
 const player = {
