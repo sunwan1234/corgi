@@ -68,7 +68,7 @@ const string = `/*你好我是一名前端新人，
   animation: dog-tail 170ms ease-out infinite;
 }
 
-.tail:before 
+.tail:before {
   background-color: #f79e38;
 }
 
