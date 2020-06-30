@@ -1,5 +1,6 @@
-const string = `
-/*先来画柯基的脸*/
+const string = `/*你好我是一名前端新人，
+今天我们来用CSS画一只可可爱爱的柯基
+先来画柯基的脸*/
 .face {
   background-color: #fff;
 }
@@ -72,15 +73,21 @@ const string = `
 }
 
 /*最后画上小短腿*/
-.legs__front, .legs__back {
+.legs__front {
+  width: 10%;
+  background-color: #f79e38;
+}
+.legs__back {
   width: 10%;
   background-color: #f79e38;
 }
 
-.legs__front:after, .legs__back:after {
-  background-color: #fff;
+.legs__front:after{
+  background: #fff;
 }
-
+.legs__back:after {
+  background: #fff;
+}
 `
 
 const player = {
@@ -121,7 +128,7 @@ const player = {
         }
         player.ui.demo.innerText = string.substr(0, player.n)
         player.ui.demo2.innerHTML = string.substr(0, player.n)
-        player.ui.demo.scrollTop = player.ui.demo.scrollHeight
+        player.ui.demo.scrollTop = player.ui.demo.scrollHeight + 1000
     },
     play: () => {
         player.id = setInterval(player.run, player.time)
