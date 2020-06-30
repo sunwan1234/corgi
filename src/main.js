@@ -74,11 +74,6 @@ const string = `/*你好我是一名前端新人，
 
 /*最后画上小短腿*/
 
-.legs__front {
-  width: 10%;
-  background-color: #f79e38;
-}
-
 .legs__back {
   width: 10%;
   background-color: #f79e38;
@@ -95,11 +90,15 @@ const string = `/*你好我是一名前端新人，
 .legs__front--left {
   left: 38%;
   transform: rotate(1deg);
+  width: 10%;
+  background-color: #f79e38;
 }
 
 .legs__front--right {
   left: 20%;
   transform: rotate(-4deg);
+  width: 10%;
+  background-color: #f79e38;
 }
 
 .legs__back--left {
