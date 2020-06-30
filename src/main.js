@@ -155,7 +155,7 @@ const player = {
         }
         player.ui.demo.innerText = string.substr(0, player.n)
         player.ui.demo2.innerHTML = string.substr(0, player.n)
-        player.ui.demo.scrollTop = player.ui.demo.scrollHeight + 1000
+        player.ui.demo.scrollTop = player.ui.demo.scrollHeight + 20000
     },
     play: () => {
         player.id = setInterval(player.run, player.time)
