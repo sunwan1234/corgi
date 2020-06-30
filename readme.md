@@ -1,5 +1,7 @@
 本地使用方法
+
 yarn global add parcel
+
 parcel src/corgi.html
 
 直接查看画好的柯基：
